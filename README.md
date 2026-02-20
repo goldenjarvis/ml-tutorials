@@ -54,6 +54,33 @@ To formally describe these relationships, we invented functions! A function is l
 Think about converting temperature from Celsius to Fahrenheit. There's a specific formula for that: multiply by 9/5 and add 32. That's a function! The input is the temperature in Celsius, and the output is the temperature in Fahrenheit.
 
 In machine learning, we often try to find the function that describes the relationship between our data. We might not know the exact rule, but we can use the data to learn an approximation of it. This learned function can then be used to make predictions on new, unseen data.
+
+
+1. Algebra , variables are nothing but placeholders
+2. Mapping , Function , Transformations ->
+    Visualizing ND tuples
+    Linear / Non-Linear Transformation
+3. Matrices 
+4. 3rd Video about visualization of data points
+5. Calculus 
+6. Coding Linear regression
+7. Gradient descent
+8. Polynomial Fitting Problem + Feature Enginering 
+9. Scaling of data is important -> and it's impact on countur plots and convergence
+10. Data clean up task.
+11. How to avoid Feature Engineering yourself. 
+12. Non-linear Activation Functions. 
+13. UAT [ Universal Approximation Theorem ] and intution of lego blocks 
+14. Categorical Data Set. Just talk about data and example of occurance
+15. Probability , sigmoid , softmax 
+16. Defining Classification problem and logistic regression. 
+17. Multi Variable classification problem. 
+18. Jumping to what is english and developing the intution can a machine ever learn to speak ?
+19. What are different types of encoding -> one hot encoding , word2vec , vector embeddings like BERT etc. 
+20. 
+
+
+
 <!-- 
 # Calculus: The Study of Change
 
