@@ -81,7 +81,7 @@ In machine learning, we often try to find the function that describes the relati
 
 
 
-<!-- 
+
 # Calculus: The Study of Change
 
 So we have functions. But how do we find the *best* function for our data? What does "best" even mean? Usually, it means the function that makes the fewest mistakes. We can create another function—an "error function"—that measures how wrong our predictions are. Our goal is to find the input to this error function that gives us the smallest possible error.
@@ -142,13 +142,3 @@ And that's the foundation of machine learning. From here, the journey into speci
 
 
 
-
-
-
-
-
-
-
-
-
- -->
