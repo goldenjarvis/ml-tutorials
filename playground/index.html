@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Graph Playground</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>ML Graph Playground</h1>
+      <div class="topbar-actions">
+        <button id="btn-load-example">Load Example</button>
+        <button id="btn-run">Run Graph</button>
+        <button id="btn-export">Export JSON</button>
+        <button id="btn-import">Import JSON</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel palette-panel">
+        <h2>Node Palette</h2>
+        <div id="palette" class="palette-list"></div>
+        <p class="hint">Drag nodes into the canvas.</p>
+      </aside>
+
+      <section class="canvas-panel">
+        <div id="workspace" class="workspace">
+          <canvas id="edges-canvas"></canvas>
+        </div>
+      </section>
+
+      <aside class="panel inspector-panel">
+        <h2>Inspector</h2>
+        <div id="inspector-empty">Select a node.</div>
+        <div id="inspector-form" class="hidden">
+          <label>
+            Node ID
+            <input id="node-id" type="text" readonly />
+          </label>
+          <label>
+            Type
+            <input id="node-type" type="text" readonly />
+          </label>
+          <label>
+            Scope
+            <input id="node-scope" type="text" />
+          </label>
+          <label>
+            Params (JSON)
+            <textarea id="node-params" rows="10"></textarea>
+          </label>
+          <button id="btn-save-node">Save Node</button>
+        </div>
+
+        <h2>Connections</h2>
+        <label>From Node <select id="from-node"></select></label>
+        <label>From Port <select id="from-port"></select></label>
+        <label>To Node <select id="to-node"></select></label>
+        <label>To Port <select id="to-port"></select></label>
+        <label><input id="edge-delayed" type="checkbox" /> Delayed edge (use previous loop step)</label>
+        <button id="btn-add-edge">Add Edge</button>
+
+        <h2>Edges</h2>
+        <ul id="edge-list" class="edge-list"></ul>
+      </aside>
+    </main>
+
+    <section class="output">
+      <h2>Output</h2>
+      <pre id="run-output"></pre>
+    </section>
+
+    <textarea id="json-buffer" class="json-buffer hidden"></textarea>
+
+    <script src="../dist/mltb.js"></script>
+    <script src="./playground.js"></script>
+  </body>
+</html>

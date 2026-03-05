@@ -1,0 +1,27 @@
+{
+  "name": "ml-tutorials",
+  "version": "1.0.0",
+  "description": "Everything to learn about machine learning.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:watch": "node scripts/build.js --watch",
+    "playground": "node scripts/playground-server.js",
+    "test": "echo \"No tests yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldenjarvis/ml-tutorials.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/goldenjarvis/ml-tutorials/issues"
+  },
+  "homepage": "https://github.com/goldenjarvis/ml-tutorials#readme",
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  }
+}
